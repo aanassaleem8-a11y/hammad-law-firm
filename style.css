@@ -235,7 +235,7 @@ img {
     align-items: center;
     background:
         linear-gradient(90deg, rgba(8,8,8,.98), rgba(8,8,8,.80)),
-        url("images/law-bg.jpg.jpg") center/cover;
+        url("law-bg.jpg.jpg") center/cover;
 }
 
 .hero-content {
@@ -1146,3 +1146,278 @@ html {
 .quote-box:hover .quote-mark {
     transform: translateY(-4px);
 }
+    /* ================= FINAL MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .top-bar {
+        padding: 8px 4%;
+        font-size: 11px;
+    }
+
+    .top-container {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+    }
+
+    .top-container div {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .navbar {
+        min-height: 70px;
+        padding: 0 4%;
+    }
+
+    .logo-symbol {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .logo h2 {
+        font-size: 17px;
+    }
+
+    .logo span {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 27px;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #080808;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+        border-top: 1px solid #333;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav a {
+        width: 100%;
+        padding: 13px 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-btn {
+        display: none;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 45px 5% 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-image {
+        order: -1;
+        width: 100%;
+    }
+
+    .image-frame {
+        width: 88%;
+        max-width: 360px;
+        height: 390px;
+        margin: auto;
+        padding: 8px;
+    }
+
+    .image-frame::before {
+        top: -8px;
+        right: -8px;
+    }
+
+    .image-badge {
+        bottom: 15px;
+        left: 2%;
+        padding: 10px 14px;
+    }
+
+    .image-badge strong {
+        font-size: 11px;
+    }
+
+    .image-badge small {
+        font-size: 9px;
+    }
+
+    .gold-small {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        line-height: 1.08;
+        margin: 15px 0 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-stats {
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .hero-stats strong {
+        font-size: 25px;
+    }
+
+    .hero-stats span {
+        font-size: 9px;
+    }
+
+    /* SECTIONS */
+
+    .section {
+        padding: 70px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .why-content h2 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    /* ABOUT */
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .about-content > p {
+        font-size: 14px;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    /* SERVICES */
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card {
+        min-height: auto;
+        padding: 28px;
+    }
+
+    /* WHY US */
+
+    .why-us {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .quote-box {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .quote-box p {
+        font-size: 22px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-card {
+        padding: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 5%;
+    }
+
+    .cta h2 {
+        font-size: 29px;
+    }
+
+    .cta .gold-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+    
